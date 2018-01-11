@@ -1,0 +1,275 @@
+/*all the fonts for the pages*/
+@font-face {
+  font-family: 'sutonnymjregular';
+  src: url("../fonts/SutonnyMj/sutom___-webfont.woff2") format("woff2"), url("../fonts/SutonnyMj/sutom___-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'MYRIADPROREGULAR';
+  src: url("../fonts/MYRIADPROREGULAR/MYRIADPROREGULAR.eot"), url("../fonts/MYRIADPROREGULAR/MYRIADPROREGULAR.woff") format("woff"), url("../fonts/MYRIADPROREGULAR/MYRIADPROREGULAR.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/*common design for the page*/
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'MYRIADPROREGULAR';
+  margin: 0;
+  padding: 0; }
+
+.row {
+  margin: 0; }
+
+h2 {
+  font-family: 'sutonnymjregular';
+  font-size: 35px;
+  color: #5350a2;
+  margin-bottom: 30px; }
+
+/*main design*/
+.main-wrapper {
+  background: #eeeef0;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'MYRIADPROREGULAR';
+  overflow-x: hidden; }
+  .main-wrapper .main-content {
+    background-image: url(../images/main-wrapper.jpg);
+    max-width: 1024px;
+    width: 100%;
+    background-repeat: no-repeat;
+    padding: 12px 30px 0; }
+    .main-wrapper .main-content .row .header {
+      display: flex; }
+      .main-wrapper .main-content .row .header #logo {
+        width: 66px;
+        margin: 0 20px 0 36px; }
+      @media (max-width: 991px) {
+        .main-wrapper .main-content .row .header #logo {
+          margin-right: 0; } }
+      .main-wrapper .main-content .row .header #menubar {
+        width: 100%;
+        margin-top: 42px; }
+        .main-wrapper .main-content .row .header #menubar .navmenu {
+          margin: 0;
+          padding: 0 0 0 10px;
+          display: inline-flex; }
+          .main-wrapper .main-content .row .header #menubar .navmenu li {
+            background: #5350a2;
+            border-right: 2px solid white;
+            list-style: none;
+            padding: 3px 25px; }
+            .main-wrapper .main-content .row .header #menubar .navmenu li a {
+              color: #fff;
+              font-size: 16px; }
+        .main-wrapper .main-content .row .header #menubar #form-header {
+          padding: 0; }
+        .main-wrapper .main-content .row .header #menubar .navbar-form {
+          margin: 5px 0;
+          padding: 0;
+          float: right !important; }
+          .main-wrapper .main-content .row .header #menubar .navbar-form .form-group .form-control-email, .main-wrapper .main-content .row .header #menubar .navbar-form .form-group .form-control-password {
+            width: 137px;
+            height: 25px;
+            font-size: 10px;
+            background: #fbfdfe;
+            border: 1px solid #bbbcbd;
+            padding: 5px;
+            border-radius: 2px;
+            margin-right: 7px; }
+          .main-wrapper .main-content .row .header #menubar .navbar-form .form-group .form-control-password {
+            width: 86px; }
+          .main-wrapper .main-content .row .header #menubar .navbar-form button.btn.btn-default {
+            color: #fff;
+            background: #68c5be;
+            padding: 5px 11px;
+            font-size: 10px;
+            border-radius: 0;
+            border: none;
+            margin-right: 10px; }
+          .main-wrapper .main-content .row .header #menubar .navbar-form a {
+            color: #5350a2;
+            font-size: 14px; }
+    .main-wrapper .main-content .row .slug-content {
+      margin: 14% 45px;
+      text-align: right; }
+      .main-wrapper .main-content .row .slug-content h1 {
+        font-family: 'sutonnymjregular';
+        font-size: 32.39px;
+        color: #34495e;
+        line-height: 53.02px;
+        display: inline-block; }
+    .main-wrapper .main-content .row .appicon-wrap {
+      text-align: right; }
+      .main-wrapper .main-content .row .appicon-wrap img {
+        margin-left: 5px; }
+    .main-wrapper .main-content .row .social-share {
+      text-align: right;
+      margin: 34px 0 8px; }
+      .main-wrapper .main-content .row .social-share p {
+        font-size: 12px;
+        color: #34495e;
+        line-height: 33px; }
+      .main-wrapper .main-content .row .social-share i.fa {
+        font-size: 34px;
+        vertical-align: middle;
+        margin: 0 5px;
+        color: #5350a2;
+        cursor: pointer; }
+      .main-wrapper .main-content .row .social-share img {
+        cursor: pointer; }
+  .main-wrapper .body-content {
+    max-width: 1024px;
+    margin: auto; }
+    .main-wrapper .body-content .main-body-content {
+      display: flex; }
+    .main-wrapper .body-content #sections {
+      max-width: 808px;
+      width: 100%;
+      padding: 0; }
+      .main-wrapper .body-content #sections #section1 {
+        border-bottom: 1px solid #4c4993; }
+      .main-wrapper .body-content #sections #section1-service {
+        background: #5350a2;
+        padding: 53px 40px 41px; }
+        .main-wrapper .body-content #sections #section1-service #servicelist {
+          text-align: center; }
+          .main-wrapper .body-content #sections #section1-service #servicelist #img-wrap {
+            height: 68px; }
+          .main-wrapper .body-content #sections #section1-service #servicelist p.ng-binding {
+            font-family: 'sutonnymjregular';
+            color: #fff;
+            font-size: 28px;
+            margin-top: 21px; }
+      .main-wrapper .body-content #sections section#section2 {
+        padding: 31px 19px;
+        background: #eeeef0;
+        border-bottom: 2px solid #cacacb;
+        position: relative; }
+        .main-wrapper .body-content #sections section#section2 #dropdown-arrow {
+          width: 30px;
+          height: 30px;
+          background: #EEEEF0;
+          position: absolute;
+          top: -15px;
+          right: 18%;
+          -ms-transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+        .main-wrapper .body-content #sections section#section2 i.fa.fa-caret-right {
+          margin-right: 5px;
+          font-size: 15px;
+          color: #5350a2;
+          vertical-align: text-bottom; }
+        .main-wrapper .body-content #sections section#section2 .ng-binding.ng-scope {
+          font-size: 12px;
+          color: #34495e;
+          line-height: 23px; }
+          .main-wrapper .body-content #sections section#section2 .ng-binding.ng-scope:hover {
+            text-decoration: underline;
+            cursor: pointer; }
+      .main-wrapper .body-content #sections #section3 {
+        text-align: center;
+        padding: 59px 20px 25px; }
+        .main-wrapper .body-content #sections #section3 div#subsection-service {
+          display: flex; }
+          .main-wrapper .body-content #sections #section3 div#subsection-service #servicelist {
+            margin: 0; }
+            .main-wrapper .body-content #sections #section3 div#subsection-service #servicelist .col-xs-12 {
+              margin: 20px 0; }
+            .main-wrapper .body-content #sections #section3 div#subsection-service #servicelist #img-wrap {
+              margin-bottom: 30px; }
+    .main-wrapper .body-content aside {
+      width: 216px;
+      padding-left: 30px;
+      background: #fff; }
+      .main-wrapper .body-content aside #add1 {
+        margin-bottom: 47px; }
+    .main-wrapper .body-content .pricelist-mainwrap {
+      background: #5350a2;
+      padding: 45px 25px  30px; }
+      .main-wrapper .body-content .pricelist-mainwrap h2 {
+        color: #fff;
+        text-align: center; }
+      .main-wrapper .body-content .pricelist-mainwrap #subcatagory {
+        padding: 0 5px; }
+        .main-wrapper .body-content .pricelist-mainwrap #subcatagory h3 {
+          background: #6bc7be;
+          text-align: center;
+          padding: 5px;
+          font-size: 24px;
+          color: #fff;
+          border-bottom: 1px solid #83a0be; }
+        .main-wrapper .body-content .pricelist-mainwrap #subcatagory .ng-scope, .main-wrapper .body-content .pricelist-mainwrap #subcatagory #totalcost {
+          background: #e8e8e8;
+          padding: 12px;
+          border-bottom: 2px solid #f3f3f3;
+          font-size: 14px;
+          color: #363636; }
+        .main-wrapper .body-content .pricelist-mainwrap #subcatagory #totalcost {
+          font-weight: 600;
+          border: 0;
+          text-align: left; }
+          .main-wrapper .body-content .pricelist-mainwrap #subcatagory #totalcost span {
+            float: right; }
+        .main-wrapper .body-content .pricelist-mainwrap #subcatagory .plan-panel {
+          background: #e8e8e8;
+          text-align: center; }
+          .main-wrapper .body-content .pricelist-mainwrap #subcatagory .plan-panel #btn {
+            margin: 15px 0 20px;
+            background: #5350a2;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            padding: 6px 13px; }
+        .main-wrapper .body-content .pricelist-mainwrap #subcatagory #priceimg, .main-wrapper .body-content .pricelist-mainwrap #subcatagory #ratio {
+          float: right; }
+      .main-wrapper .body-content .pricelist-mainwrap .trialbtn {
+        text-align: center;
+        margin: 45px  0 0; }
+        .main-wrapper .body-content .pricelist-mainwrap .trialbtn button {
+          color: #34495e;
+          font-size: 24px;
+          padding: 2px 25px;
+          background: #eeeef0;
+          border: 0; }
+    .main-wrapper .body-content .footer {
+      padding: 32px 0;
+      font-size: 15px;
+      color: #5350a2;
+      display: flex; }
+      .main-wrapper .body-content .footer #footer-col {
+        display: -webkit-inline-box;
+        margin: 0;
+        float: right;
+        position: relative;
+        padding: 0 20px 0 0; }
+        .main-wrapper .body-content .footer #footer-col li {
+          list-style: none;
+          margin-left: 10px; }
+      .main-wrapper .body-content .footer span {
+        position: absolute;
+        top: 20px;
+        right: 31%;
+        font-size: 9px;
+        color: #34495e; }
+
+@media (max-width: 921px) {
+  .main-wrapper .main-content .row .header #menubar {
+    margin-top: 0; }
+  .col-xs-12.col-sm-6.col-md-6 {
+    width: 100%;
+    float: left; }
+  .main-wrapper .main-content .row .header #menubar .navbar-form {
+    padding: 10px 0 0 26px;
+    float: left;
+    width: 100%;
+    display: flex; }
+  .main-wrapper .main-content .row .header #menubar .navbar-form button.btn.btn-default {
+    height: 25px; }
+  .slug-content h1, .main-wrapper .main-content .row .appicon-wrap, .main-wrapper .main-content .row .social-share {
+    text-align: center; }
+  .main-wrapper .body-content #sections #section1-service #servicelist p.ng-binding {
+    margin-top: 0; }
+  .main-wrapper .body-content #sections #section1-service #servicelist {
+    margin-bottom: 30px; } }

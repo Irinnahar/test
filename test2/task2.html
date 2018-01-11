@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="main-wraper">
+		<h1>Contact Form</h1>
+		<form onsubmit="return(validate())">
+	    <div class="row">
+	      <div class="col-25">
+	        <label for="fname">First Name</label>
+	      </div>
+	      <div class="col-75">
+	        <input 
+	        	type="text" 
+	        	id="fname" 
+	        	name="firstname" 
+	        	placeholder="First name" 
+	        	required  
+	        	minlength="6" 
+	        	maxlength="10">
+	      </div>
+	    </div>
+
+	    <div class="row">
+	      <div class="col-25">
+	        <label for="lname">Last Name</label>
+	      </div>
+	      <div class="col-75">
+	        <input 
+	        	type="text" 
+	        	id="lname" 
+	        	name="lastname" 
+	        	placeholder="Last name (Optional)">
+	      </div>
+	    </div>
+	    <div class="row">
+	      <div class="col-25">
+	        <label for="mobile">Mobile</label>
+	      </div>
+	      <div class="col-75">
+	        <input 
+		        type="tel" 
+		        id="mobile" 
+		        name="mobile" 
+		        placeholder="Phone no(xxxx-xxx-xxxx)" 
+		        required pattern="^\d{4}-\d{3}-\d{4}$" 
+		        oninput="setCustomValidity(''); checkValidity(); setCustomValidity(validity.valid ? '' :'please follow the pattern xxxx-xxx-xxxx');"
+	        >
+	        <!-- <p>Example number (Bangladesh): 01812-345678 </p> -->	     
+	       </div>
+	    </div>
+	    <div class="row">
+	      <div class="col-25">
+	        <label for="address">Address</label>
+	      </div>
+	      <div class="col-75">
+	        <input 
+	        	type="text" 
+	        	id="address" 
+	        	name="address" 
+	        	placeholder="Address" 
+	        	required
+	        >
+	      </div>
+	    </div>
+	    <div class="row">
+	      <div class="col-25">
+	        <label for="email">Email</label>
+	      </div>
+	      <div class="col-75">
+	        <input 
+		        type="email" 
+		        id="email" 
+		        name="email" 
+		        placeholder="Email" 
+		        required="" 
+		        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+		        oninput="setCustomValidity(''); checkValidity(); setCustomValidity(validity.valid ? '' :'Email must contain a @ and . symbol');"
+	        >
+	      </div>
+	    </div>
+	    <div class="row">
+	    	<div class="col-25">
+		    </div>
+	    	<div class="col-75">
+	      		<input type="submit" onclick="myFunction()" type="button" value="Submit" >
+	      	</div>
+	    </div>
+  	</form>	
+  	</div>
+
+  	<script type="text/javascript" >
+ 		function myFunction() {
+			  var fname = document.getElementById("fname").value;
+			  var email = document.getElementById("email").value;
+			  var mobile = document.getElementById("mobile").value;
+			  var address = document.getElementById("address").value;
+			  
+			  if (name == '' || email == '' || mobile == '' || address == '') {
+			  alert("Please Fill All Fields");
+			  } else {
+			  // AJAX code to submit form.
+			  $.ajax({
+				  type: "POST",
+				  url: "wwww.google.com?callback=true",
+				  data: dataString,
+				  cache: false,
+				  success: function(html) {
+				    console.log('hello')
+				  alert('success!');
+				  
+				  }
+				  });
+			  }
+			   return false;
+			}
+  		}
+  	
+  	</script>
+</body>
+</html>
